@@ -1,6 +1,6 @@
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
 destfile <- paste0(getwd(), "/", "datafile.zip")
-download.file(url = url, destfile = destfile, method = curl)
+download.file(url = url, destfile = destfile, method = "curl")
 unzip("datafile.zip", list=TRUE)
 
 library(dplyr)
